@@ -1,0 +1,42 @@
+m = """oomktvziqtaovmmpxzoqrzsxlpwpgoj
+uDQEMISYnnVYnvyWRhHsDXnSCXAVVZj
+tZbknedErdpvAwQWpUiLqOxIqpafvXp
+dXoAVWcKppbEPuaqmXWjXJwRoRFOoEg
+pDiRUXlQjKJlslskVpGwtljGyVJPxHv
+bQsQNKxCsdYMdQPJiBmyrsuOrJQOtXg
+pMekeinUaMoDXqFzweLKipkBuggnsUv
+eQFYCJSKfBgHaJgZnZoWmOmAOJLVQHi
+hljrplajyKNXtwmfOjRwOqcqeeplyzy
+gkFOltsOyrPgIaerIaSjQQaVMyEhfyd
+vEaRHbBzfrcwJbCZmHdddLpuEJwspbt
+sXQGkwpKaTZmWJiZzpbkpHNiToawxKn
+wJpIKbGhnLjVAJNcxrqkKEJCKCOocSv
+mTRDNDpFtRUmcHoRELeSqXoGUIIsuYu
+ajeHaSVlQGLaEprSQarDzTomJdAWfqb
+zIJLHRBXMvNDegYeaoVRDuWBbdSBtLv
+xIeKdAYwajGHMgRLDGgDinBiLNBgatb
+kHepNsCQSJjTRmQrCHYWJqIPOVAUOer
+rvhmZfmogPglGNuLyAuSivBctlvVfzb
+qBJdHUkSaTArlgkhtHPyGhXOPkwmkBq
+rvbzZfwvLtTnhyXVHPlwsuGZQnNiNcm
+yCMtAVwYVgtZHVNznolGMBETIHFmoWj
+wfezbysbvOzsAhxSZFFAfOouyHldEYh
+gNHKKSFUtcUxfRyXHMugYBtAxBwDJZh
+rHmsozuNeoJqyzMDHsNbUDwzaNLtdxr
+bVmQMHyNndOWCZLnhrPxZXCYLDTWQre
+aSiEEJjZtoRpUzgsxsiiGzvnRpKLMrk
+qTzGCKvNhUhjrmCjAdwQAvkgqHyJZLm
+sSxzwjxAnWesTszIxirRwcWIXUPtwwa
+nTDEMTRGyhzdCtkTTDWbxdSjsNYlfXz
+eawtidzosgaofjxxyfcdoiulemirqap"""
+
+for i in m
+  # println(Int(i))
+  if Int(i) == 10
+    print(i)
+  elseif Int(i) > 97
+    print('■')
+  else
+    print('□')
+  end
+end
