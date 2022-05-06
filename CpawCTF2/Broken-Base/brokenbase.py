@@ -1,21 +1,27 @@
 import base64
 
-path = 'C:\\Users\\tiwasaki\\Desktop\\brokenbase.txt'
+encoded = 'CRZANFZSAQ3QMF3XWQTBONSTGMS7I52TKNJBNZTX2==='
 
 table = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'
 pad = '='
 
-
-f = open(path)
-s = f.read()
-without_pad = s.replace('=','')
-ignore_invalid = without_pad.replace('1','')
+without_pad = encoded.replace('=','')
 
 count = 0
-for c in ignore_invalid:
-    count += 1 
+d = ''
+for c in without_pad:
     num = table.index(c)
-    print(f'{c}:{num:05b}')
-    if count == 8 :
-        print()
-        count = 0
+    d += f'{num:05b}'
+
+d1 = d[:43]
+d2 = d[44:]
+
+d3 = d2 + d1
+
+d3 = [d3[i:i+8] for i in range(0,len(d3),8)]
+    
+for c in d3:
+    try:
+        print(chr(int(c,2)),end='')
+    except:
+        print(f'{c}:error')
